@@ -11,18 +11,9 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Value;
 import java.util.List;
 
-//class MessageRestController {
-//
-//    @Value("${msg:Hello world - Config Server is not working..pelase check}")
-//    private String msg;
-//
-//    @RequestMapping("/msg")
-//    String getMsg() {
-//        return this.msg;
-//    }
-//}
+
 @RestController
-@RequestMapping("/v1/api/")
+@RequestMapping("/api/v1")
 public class MovieController {
     @Autowired
     private MovieService movieService;

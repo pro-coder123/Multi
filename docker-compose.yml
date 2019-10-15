@@ -21,15 +21,13 @@ services:
       hostname: localhost
 
    mysql:
-      image: mysql:5.7
-      ports:
-         - 3306:3306
-      container_name: mysql_docker
-      network_mode: host
-      hostname: localhost
-      environment:
+     image: mysql
+     network_mode: host
+     hostname: localhost
+     ports:
+       - 3306:3306
+     environment:
        MYSQL_ROOT_PASSWORD: Root@123
-       MYSQL_DATABASE: userDb
         
    springmovie:
       image: movieapplicationmongo-app
